@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Personal Info</title>
+    <link rel="stylesheet" href="style.css">
+    <!--poppins font-->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!--poppions semi-bold font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!--roboto-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+</head>
+<body id="bodyPadding">
+    
+    <section id="EPITitle">
+        <div class="EPITitleDiv">
+            <div class="xBtn">
+                <a href="createProfile.html"><img id="xButton" src="img/editPersonalInfo/Icons.png" alt="xIcon.png"></a>
+            </div>
+            <div>
+                <span>Edit personal info</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="enterInfo">
+        <div class="enterName">
+            <div>
+                <span>First name</span>
+                <input type="text" placeholder="Snackie">
+            </div>
+            <div>
+                <span>Last name</span>
+                <input type="text" placeholder="Overflowson">
+            </div>
+        </div>
+
+        <div class="enterPersonalInfo">
+            <span>Height</span>
+            <input class="heightInput" type="text" placeholder="If left as blank, it will be unkown">
+
+            <span>Weight</span>
+            <input class="weightInput" type="text" placeholder="If left as blank, it will be unkown">
+
+            <span>Where do you live?</span>
+            <textarea id="addressTextInput" placeholder="If the address is left as blank, your&#10;delivery cannot arrive."></textarea> 
+        </div>
+
+        <!--button-->
+        <div class="btn">
+            <a href="profileMade.html" class="noUnderline"><button id="btn" class="orangebtn">Confirm</button></a>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+Flow Order:
+
+- index(slide imgs to see next slide)
+- welcomeBack
+- createAccount
+- createProfile
+- editProfileInfo
+- yourGoal
+- selectItems(click on items to select)
+- snackBundle
+- editBundleInfo
+- marketPage
+- marketSeach
+- marketSeachNoResult
+- marketSeachSweet
+- bakalavaSearch
+- shoppingCart
+- shoppingCartPayment
+- shoppingCartProccessingOrder
+- accountPage
+- orderReceived
+- orderDeliveryOTW
+- orderDelivered
+- accountPageOrderDelivered

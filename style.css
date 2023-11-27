@@ -1,0 +1,1778 @@
+/*** GLOABAL STYLING ***/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#bodyPadding{
+    padding-left: 1.33rem;
+    padding-right: 1.33rem;
+}
+
+#nextPgLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+#nextPgLink2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/*Buttons*/
+#btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.41rem;
+    font-family: 'Poppins';
+    font-weight: 600;
+    line-height: 22px;
+    width: 29.83rem;/*was 358pt*/
+    height: 4.66rem;/*was 56pt*/
+    border: none;
+    border-radius: 0.5rem;
+}
+.noUnderline{
+    text-decoration: none;
+}
+
+/*Orange BTN Color*/
+.orangebtn{
+    background-color: rgb(238, 103, 35);
+    color: rgb(255, 255, 255);
+}
+    /*Orange when clicked on*/
+    .orangebtn:focus{
+        background-color: rgb(192, 95, 50);
+    }
+    /*Orange when disabled*/
+    .orangebtn button:disabled,
+    button[disabled]{
+    background-color: rgb(248, 194, 167);
+
+    }
+
+/*White BTN Color*/
+.whitebtn{
+    background-color: rgb(255, 255, 255);
+    color: rgb(238, 103, 35);
+}
+    /*White when clicked on*/
+    .whitebtn:focus{
+        background-color: rgb(211, 209, 211);
+    }
+    /*White when disabled*/
+    .whitebtn button:disabled,
+    button[disabled]{
+    background-color: rgb(248, 247, 248);
+    }
+
+/*Grey BTN Color*/
+.greybtn{
+    background-color: rgb(237, 236, 237);
+    color: rgb(238, 103, 35);
+}
+    /*Grey when clicked on*/
+    .greybtn:focus{
+        background-color: rgb(211, 209, 211);
+    }
+    /*Grey when disabled*/
+    .greybtn button:disabled,
+    button[disabled]{
+    background-color: rgb(248, 247, 248);
+    }
+
+/*** Get Started Page ***/
+
+/*main body content styling*/
+#body{
+    text-align: center;
+}
+
+/* for js img and title slide*/
+#body .slide-container{
+    position: relative;
+    overflow-x: hidden;
+    height: 85vh;
+}
+#body .slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+#body .slide img{
+    object-fit: cover;
+}
+#body .slide .startPgImg{
+    width: 32.49rem;
+    height: 32.49rem;
+}
+#body .slide .swipeIndicator{
+    padding-top: 5.33rem;
+    padding-bottom: 2.33rem;
+}
+#body .active-slide{
+    opacity: 1;
+}
+#body .hidden-slide{
+    opacity: 0;
+    pointer-events: none;
+}
+
+#body .slide-container .slide .title{
+    font-size: 2.83rem;
+    color: rgb(238, 103, 35);
+    font-family: 'Poppins';
+    line-height: 3.5rem;
+    font-weight: bold;
+}
+
+/*div container for content*/
+#body .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-left: 1.33rem;
+    padding-right: 1.33rem;
+}
+
+#body .content button{
+    text-decoration: none;
+}
+
+/*** Sign Up Page ***/
+/*logo img*/
+#logoImg .volcanoImg{
+    display: flex;
+    justify-content: center;
+    padding-top: 17.41rem;
+    padding-bottom: 13.33rem;
+}
+
+/*Social boxes styling*/
+#socialLogin .social{
+    padding-left: 16pt;
+    padding-right: 16pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#socialLogin .social .socialDiv{
+    padding-bottom: 1rem;
+}
+#socialLogin .social .socialDiv .socialBox{
+    display: flex;
+    padding: 0.83rem;
+    width: 28rem;
+    height: 2.25rem;
+    border-radius: 0.5rem;
+}
+#socialLogin .social .socialDiv .socialBox span{
+    padding-top: 0.25rem;
+    padding-left: 1.25rem;
+    font-size: 1.66rem;
+    font-weight: bold;
+}
+
+#socialLogin .facebook{
+    background-color: rgb(24, 119, 242);
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#socialLogin .google{
+    background-color: rgb(255, 255, 255);
+    color: #757575;
+    font-family: roboto;
+}
+#socialLogin .apple{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    /*font-family: ; <- cant find font online*/
+}
+
+#signUp .cellSeperation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: rgba(255, 255, 255, 0.3);
+    border-style: solid;
+    border-width: 0.16rem;
+    width: 19.16rem;;
+}
+
+#backGroundImg{
+    background-image: url(img/signup/backgroundImg.png);
+    background-position: center top;
+    background-size: 100% auto;
+}
+#btnOverImg{
+    padding-top: 56.3rem;
+}
+
+/*sign up with email button div*/
+#signUp .signUpButton{
+    display: flex;
+    justify-content: center;
+    padding-top: 4.83rem;
+}
+
+/*** Welcome Back Page ***/
+#logoAndMessage .logoAndMessageDiv{
+    text-align: center;
+}
+#logoAndMessage .logoAndMessageDiv img{
+    padding-top: 12.16rem;
+}
+#logoAndMessage .logoAndMessageDiv .welcomBackMessage{
+    padding: 2rem 1.33rem;/*Top&Bottom then Left&Right*/
+}
+#logoAndMessage .logoAndMessageDiv .welcomBackMessage span{
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 2.33rem;
+    color: rgb(85, 77, 86);
+}
+
+#loginInfo .loginInput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#loginInfo .loginInput div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    width: 29.83rem;
+    height: 4.66rem;
+}
+/*letter & lock icon img*/
+#loginInfo .loginInput img{
+    width: 23px;
+    padding-left: 1.58rem;
+    padding-right: 1.25rem;
+}
+/*input for email & password*/
+#loginInfo .loginInput input{
+    width: 29.83rem;
+    height: 4.66rem;
+    border: none;
+}
+#loginInfo .loginInput input::placeholder{
+    color: rgb(85, 77, 86);
+    font-family: 'Poppins';
+    font-size: 1.41rem;
+    line-height: 1.83rem;
+}
+
+#loginInfo .loginInput #flowInput{
+    background-color: rgb(247, 247, 247);
+}
+#loginInfo .loginInput #flowInput input::placeholder{
+    color: rgb(193, 190, 193);
+    font-family: 'Poppins';
+    font-size: 1.41rem;
+    line-height: 1.83rem;
+}
+
+/*email div & id*/
+#loginInfo .loginInput .email, #email{
+    background-color: rgb(247, 247, 247);    
+}
+/*password div*/
+#loginInfo .loginInput .password{
+    border-style: solid;
+    border-color: rgb(237, 236, 237);
+    border-width: 2px;
+}
+
+/*Cell Seperation line*/
+#cellSepDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.33rem;
+}
+#signUp .cellSeperation2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: rgb(237, 236, 237);
+    border-style: solid;
+    border-width: 0.16rem;
+    width: 19.16rem;
+}
+
+/*Bottom Text*/
+#signUp .bottomText{
+    padding-top: 3.08rem;
+}
+#signUp .bottomText span{
+    color: rgb(151, 145, 151);
+    font-family: 'Poppins';
+    font-size: 1rem;
+    line-height: 1.33rem;
+}
+#signUp .bottomText #blueFont{
+    color: rgb(65, 155, 249);
+}
+
+
+/*** Create Profile Page ***/
+#profileTop{
+    padding-top: 3.66rem;
+}
+
+#profileTop .slide-indicator{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3.33rem;
+}
+#profileTop .slide-indicator .slides{
+    flex-basis: 6.875rem;
+    background-color: rgb(237, 236, 237);
+    width: 6.70rem;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+}
+#profileTop .slide-indicator #higlitedSlide{
+    background-color: rgb(254, 207, 51);
+}
+
+/*What is your name?*/
+#profileTop .title span{
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 2.33rem;
+    text-align: left;
+    line-height: 2.83rem;
+    color: rgb(85, 77, 86);
+}
+#profileTop .title{
+    padding-bottom: 6rem;
+}
+
+/*div for profile img and info*/
+#centerInfo .contentInfo, .userInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3.5rem;
+}
+/*Profile Img*/
+#centerInfo .profileImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 247, 247);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+#centerInfo .madeProfileImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    padding-bottom: 2rem;
+}
+
+/*your profile has been updated*/
+#completedGreen .greenCompleted{
+    background-color: rgb(200, 207, 45);
+    color: rgb(251, 251, 251);
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 1.41rem;
+    line-height: 1.83rem;
+    border-radius: 0.5rem;
+    width: 29.83rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.91rem;
+}
+/*bottom section of green bar*/
+#completedGreen .greenSec{
+    padding-top: 10.66rem;
+    padding-bottom: 2.66rem;
+}
+/*check mark*/
+#completedGreen .greenCompleted img{
+    width: 1.5rem;
+    height: 1.5rem;
+    padding-left: 1.58rem;
+}
+
+/*Profile Info*/
+#centerInfo .contentInfo .userInfo{
+    padding-top: 1.875rem;
+    padding-bottom: 2.5rem;
+}
+/*padding for span text*/
+#centerInfo .contentInfo .userInfo span{
+    padding-bottom: 0.125rem;
+}
+
+/*user name*/
+#centerInfo .contentInfo .userInfo #userName{
+    color: rgb(85, 77, 86);
+    font-size: 1.41rem;
+    font-weight: 600;/*semi-bold*/
+    line-height: 1.83rem;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+/*heigh x weight*/
+#centerInfo .contentInfo .userInfo #userHW, #userLocation{
+    color: rgb(151, 145, 151);
+    font-size: 0.93rem;
+    line-height: 1.66rem;
+    font-family: 'Poppins';
+}
+/*unkown*/
+#centerInfo .contentInfo .userInfo #userLocation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*location img*/
+#centerInfo .contentInfo .userInfo #userLocation img{
+    padding-right: 0.25rem;
+}
+
+/*space between img and "Edit"*/
+#centerInfo .editButton img{
+    padding-right: 0.625rem;
+}
+
+
+/*** Edit Personal Info Page ***/
+
+/*Edit Personal Info Title*/
+#EPITitle{
+    padding-top: 5.66rem;
+    padding-bottom: 3rem;
+}
+#EPITitle .EPITitleDiv{
+    display: flex;
+    align-items: center;
+}
+#EPITitle .EPITitleDiv .xBtn{
+    padding-right: 6rem;
+}
+#EPITitle span{
+    display: flex;
+    justify-content: center;
+    color: rgb(85, 77, 86);
+    font-family: 'Poppins';
+    font-size: 1.66rem;
+    font-weight: 600;/*semi-bold*/
+    line-height: 2.08rem;
+}
+
+/*All other titles*/
+#enterInfo span{
+    color: rgb(85, 77, 86);
+    font-family: 'Poppins';
+    font-size: 1.41rem;
+    font-weight: 600;/*semi-bold*/
+    line-height: 1.83rem;
+}
+
+/*input styling*/
+#enterInfo input{
+    background-color: rgb(247, 247, 247);
+    border: none;
+    border-radius: 0.5rem;
+}
+
+/*First & Last Name div*/
+#enterInfo .enterName{
+    display: flex;
+    justify-content: space-between;
+}
+/*First & Last Name Input*/
+#enterInfo .enterName input{
+    display: flex;
+    width: 14.25rem;
+    height: 4.66rem;
+}
+#enterInfo input::placeholder{
+    color: rgb(193, 190, 193);
+    font-family: 'Poppins';
+    font-size: 1.41rem;
+    line-height: 1.83rem;
+    padding-left: 1.41rem;
+}
+
+/*Other Info div*/
+#enterInfo .enterPersonalInfo{
+    display: flex;
+    flex-direction: column;
+}
+#enterInfo .enterPersonalInfo span{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+/*Height/Weight*/
+#enterInfo .enterPersonalInfo input{
+    width: 100%;
+    height: 4.66rem;
+}
+/*Where do you live?*/
+#enterInfo .enterPersonalInfo #addressInput{
+    width: 100%;
+    height: 9.33rem;
+}
+
+#addressTextInput{
+    background-color: rgb(247, 247, 247);
+    width: 100%;
+    height: 9.33rem;
+    border: none;
+    color: rgb(193, 190, 193);
+}
+#addressTextInput::placeholder{
+    color: rgb(193, 190, 193);
+    font-family: 'Poppins';
+    font-size: 1.41rem;
+    line-height: 1.83rem;
+    padding: 1.41rem;
+}
+
+#enterInfo .btn{
+    padding-top: 11.41rem;
+}
+
+/*** WHAT IS YOUR GOAL PAGE ***/
+
+/*option div container*/
+#goalOption{
+    padding-top: 3.33rem;
+}
+#goalOption .optionBox{
+    padding-bottom: 1.33rem;
+}
+/*option grey box*/
+#goalOption .option{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 29.83rem;
+    height: 4.66rem;
+    background-color: rgb(247, 247, 247);
+    color: rgb(151, 145, 151);
+    font-family: 'Poppins';
+    border-radius: 0.5rem;
+    font-size: 1.41rem;
+    line-height: 1.83rem;
+}
+#goalOption .option .circle{
+    padding-left: 1.58rem;
+}
+#goalOption .option span{
+    padding-left: 1.08rem;
+}
+
+#conBackBtn{
+    padding-top: 18rem;
+}
+#conBackBtn div{
+    padding-bottom: 1.33rem;
+}
+
+/*double buttons on bottom*/
+#doubleBtn{
+    padding-top: 21.16rem;
+}
+#doubleBtn div{
+    padding-bottom: 1.33rem;
+}
+
+
+/*** SELECT 4 ITEMS PAGE ***/
+
+#selectOptions{
+    padding-bottom: 15rem;
+}
+
+/*food img*/
+#selectOptions #option{
+    width: 10rem;
+    height: 10rem;
+    padding: 2rem 2rem 0.66rem 2rem; /*top, right, bottom, left*/
+}
+/*food span*/
+#selectOptions .foodOption span{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+/*food option boxes*/
+#selectOptions .foodOption{
+    background-color: rgb(247, 247, 247);
+    color: rgb(85, 77, 86);
+    font-family: 'Poppins';
+    font-size: 1.41rem;
+    font-weight: 600;
+    line-height: 1.83rem;
+    border-radius: 0.5rem;
+    width: 14rem;
+    height: 18.33rem;
+}
+/*each seperate rows*/
+#selectOptions .foodOptionContainer .foodRow{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.83rem;
+}
+
+/*button styling*/
+#twoBtn{
+    padding-bottom: 1.33rem;
+}
+#twoBtn .btn{
+    padding-bottom: 1.33rem;
+}
+#twoBtn .buildBtnBundle{
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    height: 13.33rem;
+    padding-top: 1.33rem;
+    padding-bottom: 1.5rem;
+}
+
+/*ADDED THROUGH JS*/
+/*seletedItems styling*/
+/*green border*/
+.selectedItems{
+    border-style: solid;
+    border-color: rgb(200, 207, 45);
+    border-radius: 0.5rem;
+}
+/*checkMark img*/
+#itemChecked{
+    width: 2rem;
+    height: 2rem;
+    padding: 1rem;
+}
+/*white background*/
+.checkedBackGround{
+    background-color: rgb(255, 255, 255);   
+    width: 4rem;
+    height: 4rem;
+    border-radius: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.checkContainer{
+    top: 50%;
+    left: 50%;
+}
+/*food img and title container*/
+.imgAndTitleOption{
+    position: relative;
+    display: inline-block;
+}
+.active{
+    display: block !important;
+}
+/*ADDED THROUGH JS ^*/
+
+
+/*** SNACK BUNDLE PG ***/
+
+#itemList .snackInfoList{
+    padding-bottom: 1.33rem;
+}
+#itemList .snackInfo{
+    background-color: rgb(247, 247, 247);
+    width: auto;
+    height: auto;
+    border-radius: 0.5rem;
+    display: flex;
+    padding: 1.33rem;
+}
+/*selected snack img*/
+#pickedItemImg{
+    width: 5.58rem;
+    height: 5.58rem;
+}
+
+/*bundle title*/
+/*Untitled bundle*/
+.bundleTitle{
+    color: rgb(85, 77, 86);
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.41rem;
+    line-height: 1.83rem;
+}
+/*No description*/
+.description{
+    color: rgb(151, 145, 151);
+    font-family: 'Poppins';
+    font-size: 1.25rem;
+    line-height: 1.66rem;
+}
+/*rating*/
+.rating{
+    color: rgb(151, 145, 151);
+    font-family: 'Poppins';
+    font-size: 0.91rem;
+    line-height: 1.08rem;
+}
+.ratingLine{
+    display: flex;
+}
+.ratingLine img{
+    padding-right: 0.16rem;
+}
+/*span padding*/
+.bundleFourDes{
+    padding-left: 1.66rem;
+    padding-right: 3.69rem;
+}
+
+.productDes{
+    padding-left: 1.33rem;
+}
+
+#bottomSec{
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    height: 20rem;
+    padding-top: 1.5rem;
+}
+#bottomSec .btn{
+    padding-bottom: 1.33rem;
+}
+#bottomSec .wording{
+    padding-top: 1.33rem;
+}
+#bottomSec .wording span{
+    color: rgb(151, 145, 151);
+    font-family: 'Poppins';
+    font-size: 1rem;
+    line-height: 1.33rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*** EDIT BUNDLE INFO ***/
+#editBundle span{
+    color: rgb(85, 77, 86);
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.41rem;
+    line-height: 1.83rem;
+    padding-bottom: 0.66rem;
+}
+#editBundle input, textarea{
+    width: 29.83rem;
+    background-color: rgb(247, 247, 247);
+    border: none;
+    border-radius: 0.5rem;
+}
+#editBundle .bName{
+    height: 4.66rem;
+}
+#editBundle .bName::placeholder{
+    padding-left: 1.41rem;
+}
+#editBundle .bDescription{
+    height: 9.33rem;
+}
+#editBundle .bDescription::placeholder{
+    padding: 1.41rem;
+}
+#editBundle .editBundleDiv{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+#editBundle ::placeholder{
+    color: rgb(193, 190, 193);
+    font-family: 'Poppins';
+    font-size: 1.41rem;
+    line-height: 1.83rem;
+
+}
+
+#confirmBtn .btn{
+    padding-top: 27.74rem;
+}
+
+/*** HOME PAGE ***/
+#topHeader .teaImg{
+    width: 32.45rem;
+    height: 22.49rem;
+}
+
+/*location*/
+#topHeader .location{
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.66rem;
+}
+/*Main Title*/
+#topHeader .headerTitle span{
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 2.33rem;
+    line-height: 2.83rem;
+}
+
+/*Title & Arrow*/
+#titleArrow{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2.83rem;
+    padding-top: 3.41rem;
+}
+/*arrow img*/
+#titleArrow img{
+    width: auto;
+    height: auto;
+    padding-right: 1.33rem;
+}
+
+#fullSection{
+    padding-left: 1.33rem;
+}
+
+#dailyQuests .dailyItems{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+/*Daily quests*/
+#dailyQuests .dailyItems .dailyLeft{
+    width: 19.99rem;
+    height: 10rem;
+}
+#dailyQuests .dailyItems .dailyRight{
+    width: 10.16rem;
+    height: 10rem;
+}
+
+/*Popular Items*/
+#popularItems .popItems{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+#popularItems .popItems .popIemsImg{
+    width: 10rem;
+    height: 10rem;
+}
+#popularItems .popItems .popIemsImgRight{
+    width: 9.16rem;
+    height: 10rem;
+}
+
+/*Recommended for you*/
+#recommendedForYou .recItems{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.recItems .recDes{
+    display: flex;
+    flex-direction: column;
+}
+#recommendedForYou .recItems .recItemsImg{
+    width: 19.99rem;
+    height: 10rem;
+}
+#recommendedForYou .recItems .recItemsImg2{
+    width: 10.16rem;
+    height: 10rem;
+}
+
+/*Seasonal Bundle*/
+#seasonBund{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+#fourSquare img{
+    width: 5rem;
+    height: 5rem;
+}
+#fourSquare2 img{
+    width: 5rem;
+    height: 5rem;
+}
+#fourSquare{
+    display: flex;
+}
+.shoppingCartBunDes{
+    padding-left: 1.66rem;
+}
+.shoppingCartBunDes span{
+    display: flex;
+}
+
+#mysteryBundles{
+    padding-bottom: 8.33rem;
+}
+#mysteryBundles .mysBund{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+/*home title*/
+#homeTitle{
+    color: rgb(85, 77, 86);
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.83rem;
+    line-height: 2.33rem;
+}
+/*product title*/
+#productTitle{
+    color: rgb(85, 77, 86);
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.41rem;
+    line-height: 1.83rem;
+}
+/*description*/
+#description{
+    color: rgb(151, 145, 151);
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.66rem;
+}
+/*product rating*/
+#productRating{
+    color: rgb(151, 145, 151);
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 0.91rem;
+    line-height: 1.08rem;
+}
+
+/*rating (star & clock)*/
+#rating{
+    display: flex;
+    gap: 0.75rem;
+}
+
+/*pop up*/
+#popUp{
+    padding-left: 1.33rem;
+    padding-right: 1.33rem;
+    padding-top: 1.2rem;
+}
+#orangePopUp{
+    padding-right: 1.33rem;
+    padding-top: 1rem;
+}
+#bluePopUp{
+    padding-right: 1.33rem;
+    padding-top: 2.75rem;
+}
+.popUpWhiteBack{
+    height: 14.83rem;
+}
+.popUpWhiteBack .orangePopUp{
+    background-color: rgb(255, 135, 84);
+    width: 27.25rem;
+    height: 12.16rem;
+    border-radius: 0.5rem;
+}
+.popUpWhiteBack .greenPopUp{
+    background-color: rgb(200, 207, 45);
+    width: 27.25rem;
+    height: 12.16rem;
+    border-radius: 0.5rem;
+}
+.popUpWhiteBack .bluePopUp{
+    background-color: rgb(45, 207, 197);
+    width: 27.25rem;
+    height: 12.16rem;
+    border-radius: 0.5rem;
+}
+.popUpWhiteBack .checkOutPopUp .popUpMessage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.33rem;
+}
+.popUpMessage span{
+    color: rgb(251, 251, 251);
+    font-family: 'Poppins';
+    font-size: 1.41rem;
+    line-height: 1.83rem;
+}
+.popUpMessage img{
+    width: 1.66rem;
+    height: 1.5rem;
+    padding-right: 0.66rem;
+}
+#checkOutBtn button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27rem;
+    height: 4.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.41rem;
+    line-height: 1.83rem;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.popUpBox{
+    display: flex;
+    padding-bottom: 1.5rem;
+
+}
+.popUpBoxMsg{
+    padding-left: 1.33rem;
+    padding-right: 1.33rem;
+}
+.topMsg{
+    display: flex;
+    padding-top: 1.33rem;
+}
+.topMsg img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/*Nav Bar*/
+#navBar span{
+    color: rgb(151, 145, 151);
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 0.83rem;
+    letter-spacing: 0.025rem;
+}
+#navBar #highlittedIcon{
+    color: rgb(238, 103, 35);
+}
+#navBar .navigationBar{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    gap: 3rem;
+    width: 32.49rem;
+    height: 5.16rem;/*5.16*/
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 1.2rem;
+}
+#navBar .navigationBar div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*** Market Page ***/
+#searchBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
+#searchBar .searchImg img{
+    width: 1.7rem;
+    height: 1.7rem;
+    padding-left: 0.66rem;
+}
+#searchBar .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 29.83rem;
+    height: 3rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgb(247, 247, 247);
+}
+#searchBar .search2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27.33rem;
+    height: 3rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgb(247, 247, 247);
+}
+#searchBar input{
+    height: 3rem;
+    width: 28rem;
+    border: none;
+    background-color: rgb(247, 247, 247);
+}
+#searchBar .searchInput input{
+    height: 3rem;
+    width: 24rem;
+    border: none;
+    background-color: rgb(247, 247, 247);
+}
+#searchBar input::placeholder{
+    font-family: 'Poppins';
+    font-size: 1.41rem;
+    line-height: 1.83rem;
+    color: rgb(193, 190, 193);
+    padding-left: 0.83rem;
+}
+.backArrow img{
+    padding-right: 0.83rem;
+}
+
+#topThree .threeImgs{
+    padding-top: 3.33rem;
+}
+/*three stacked imgs*/
+#topThree .topThreeImgs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2.66rem;
+}
+#topThree .topThreeImgs img{
+    width: 29.83rem;
+    height: 10rem;
+}
+
+/*padding above navbar in Market page*/
+#navSpacing{
+    padding-top: 10rem;
+}
+
+#searchPopUp span{
+    font-size: 1.41rem;
+    line-height: 1.83rem;
+    font-family: 'Poppins';
+    color: rgb(151, 145, 151);
+}
+
+/*** Market Search Page ***/
+#searchBar .search img{
+    width: auto;
+    height: auto;
+}
+
+#searchPopUp div{
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(237, 236, 237);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    display: flex;
+    padding-bottom: 1.41rem;
+}
+#searchPopUp img{
+    padding-right: 1.33rem;
+}
+
+#searchDefult{
+    padding-left: 1.33rem;
+}
+#searchDefult .searchTitle{
+    padding-top: 2rem;
+    padding-bottom: 1.33rem;
+}
+
+.message{
+    display: flex;
+    padding-top: 1.41rem;
+}
+.message span{
+    font-family: 'Poppins';
+    font-size: 1.41rem;
+    line-height: 1.83rem;
+    color: rgb(151, 145, 151);
+}
+/*no result img*/
+#noResultImg{
+    width: 32.49rem;
+    height: 32.49rem;
+}
+
+
+/*** Baklava Search page ***/
+#headerBak .bakSearchTitle{
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#arrowImg{
+    padding-right: 4.7rem;
+    padding-left: 2.08rem;
+    padding-top: 0.4rem;
+}
+#headerBak span{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.66rem;
+    line-height: 2.08rem;
+    color: rgb(85, 77, 86);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#bakImg{
+    width: 32.49rem;
+    height: 22.49rem;
+}
+
+#infoBak .priceRatining{
+    display: flex;
+    align-items: center;
+    padding-bottom: 1.33rem;
+    padding-top: 2rem;
+}
+.priceRatining2{
+    display: flex;
+    align-items: center;
+    padding-bottom: 1.33rem;
+}
+.bakBundRating{
+    display: flex;
+    align-items: center;
+    padding-bottom: 1.33rem;
+}
+.bakBundRating img{
+    padding-right: 0.25rem;
+}
+
+/*pice span styling*/
+#infoBak .priceRatining .price{
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 2.33rem;
+    line-height: 2.83rem;
+    color: rgb(85, 77, 86);
+    padding-right: 0.95rem;
+}
+/*star & clock Icon*/
+#icon{
+    width: 0.83rem;
+    height: 0.83rem;
+}
+/*raing styling ex:(stars & clock)*/
+#ratingSpan{
+    font-size: 0.91rem;
+    line-height: 1.08rem;
+    font-family: 'Poppins';
+    color: rgb(151, 145, 151);
+    padding-right: 0.75rem;
+}
+/*style for item description*/
+.shoppingCartItemDes{
+    color: rgb(151, 145, 151);
+    font-family: 'Poppins';
+    font-size: 1.25rem;
+    line-height: 1.66rem;
+}
+
+
+#bookMark{
+    padding-right: 2rem;
+    right: 0;
+    position: absolute;
+}
+
+#infoBak .bakBundleDes{
+    padding-right: 1.66rem;
+    display: flex;
+    flex-direction: column;
+}
+/*description next to bundle*/
+#infoBak .bakBundleDes span{
+    padding-bottom: 0.33rem;
+}
+
+#infoBak .paraDiv{
+    padding-bottom: 3rem;
+}
+/*description paragraph*/
+#infoBak .bakPara{
+    font-family: 'Poppins';
+    font-size: 1.41rem;
+    line-height: 1.83rem;
+    color: rgb(151, 145, 151);
+}
+
+.titlePad{
+    padding-top: 3rem;
+}
+/*"Find it in a bundle" Title*/
+#infoBak .findItBundleTitle{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.83rem;
+    line-height: 2.33rem;
+    color: rgb(85, 77, 86);
+}
+/*"Turkish tea time" & "$10.99"*/
+.findItBundleTitleDes{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.41rem;
+    line-height: 1.83rem;
+    color: rgb(85, 77, 86);
+}
+/*bundle description*/
+#infoBak .findItBundleDes{
+    font-family: 'Poppins';
+    font-size: 1.25rem;
+    line-height: 1.66rem;
+    color: rgb(151, 145, 151);
+}
+
+/*Baklava Bundle Info*/
+#infoBak .bakBundle{
+    display: flex;
+    padding-top: 2.66rem;
+    padding-bottom: 5rem;
+}
+#infoBak .bundleDiscriptio{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.66rem;
+}
+#infoBak .bundleDiscriptio span{
+    padding-bottom: 0.33rem;
+}
+.bakBundPara{
+    font-family: 'Poppins';
+    font-size: 1.25rem;
+    line-height: 1.66rem;
+    color: rgb(151, 145, 151);
+}
+
+/*double btn at bottom*/
+#bakDoubleBtn div{
+    padding-bottom: 1.33rem;
+}
+/*spacing inbetween img and btn wording*/
+#bakDoubleBtn img{
+    padding-right: 0.5rem;
+}
+
+/*** Shopping Cart ***/
+
+/*seeds and taiyaki*/
+#singleItem{
+    width: 10rem;
+    height: 10rem;
+}
+
+/*all items in cart*/
+#infoBak #cartListItems{
+    display: flex;
+    padding-bottom: 2.75rem;
+}
+
+/*sun flower icon*/
+#sunFlowerIcon{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#cartPriceTotal{
+    padding-top: 17rem;
+}
+
+
+/*** Shopping Cart Remove Msg***/
+#removePopUp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    height: 24.66rem;
+}
+#removePopUp .removeMsg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#removePopUp .removeTitle{
+    font-family: 'Poppins';
+    font-size: 1.83rem;
+    font-weight: 600;
+    line-height: 2.33rem;
+    color: rgb(85, 77, 86);
+    padding-bottom: 1.33rem;
+}
+#removePopUp .removePara{
+    font-family: 'Poppins';
+    font-size: 1.41rem;
+    line-height: 1.83rem;
+    color: rgb(151, 145, 151);
+    padding-bottom: 3rem;
+}
+#removeBtn{
+    padding-bottom: 1.33rem;
+}
+#removeBtn button{
+    width: 25.83rem;
+}
+
+
+/*** Shopping Cart Payment Page ***/
+#greyBack{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+/*back ground img rgba*/
+.greyImg{
+    opacity: 0.4;
+}
+
+#applePay{
+    background-color: rgb(247, 247, 248);
+    height: 38.25rem;
+}
+#paymentInfo{
+    padding-left: 1.35rem;
+    padding-right: 1.35rem;
+}
+#applePay .applePayHeaderDiv{
+    padding-left: 1.35rem;
+    padding-right: 1.35rem;
+    border: 0.04rem;
+    border-style: solid;
+    border-color: rgb(178, 178, 178);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 3.46rem;
+}
+#applePay .applePayHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.04rem;
+    padding-bottom: 1.04rem;
+}
+/*apple pay logo*/
+#applePay .applePayHeader img{
+    width: 3.75rem;
+    height: 1.55rem;
+}
+/*cancel*/
+#applePay .applePayHeader span{
+    font-size: 1.39rem;
+    letter-spacing: 0.04rem;
+    color: rgb(0, 122, 255);
+    font-family: 'SF Pro Display';
+}
+/*blue arrow*/
+#blueArrow{
+    width: 1rem;
+    height: 2rem;
+}
+/*face rec*/
+#applePay .faceRec img{
+    width: 11rem;
+    height: 7rem;
+}
+
+#paymentInfo .masterCard{
+    width: 4rem;
+    height: 2.33rem;
+}
+
+/*payment info*/
+#applePay .applePaymentInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.04rem;
+    border-style: solid;
+    border-color: rgb(178, 178, 178);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-top: 1.04rem;
+    padding-bottom: 1.04rem;
+    font-family: 'SF Pro Display';
+    font-size: 1.04rem;
+    letter-spacing: -0.01rem;
+    color: rgb(0, 0, 0);
+}
+/*grey text*/
+#greyText{
+    color: rgb(178, 178, 178);
+}
+#paymentInfo .pricing span{
+    display: flex;;
+    flex-direction: column;
+}
+#totalPrice{
+    font-size: 1.39rem;
+    letter-spacing: -0.02rem;
+}
+.shippingPadBottom{
+    padding-bottom: 1.21rem;
+}
+.shippingPricePadBottom{
+    padding-bottom: 0.95rem;
+}
+/*face rec img*/
+#applePay .faceRec{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+/*
+#applePay .priceList{
+    padding-left: 7.28rem;
+}
+*/
+
+/*** Processing Order Page ***/
+#blackedOutBack{
+    background-color: rgba(0, 0, 0, 0.85);
+    height: 70rem;
+}
+#blackedOutBack .blackOut{
+    opacity: 0.1;
+}
+
+#processingMsg{
+    position: fixed;
+    top: 28.83rem;
+    left: 5.5rem;
+}
+#processingMsg .orderLoading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins';
+}
+/*Processing order*/
+#processingMsg .processing{
+    font-size: 1.83rem;
+    line-height: 2.33rem;
+    font-weight: 600;
+}
+#processingMsg .orderDes{
+    font-size: 1.41rem;
+    line-height: 1.83rem;
+}
+/*loading wheel img*/
+#processingMsg img{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#cancelBtn{
+    padding-top: 13rem;
+}
+
+
+/*** Acount Page ***/
+#accountTitle{
+    color: rgb(85, 77, 86);
+    font-family: 'Poppins';
+    font-size: 2.33rem;
+    line-height: 2.83rem;
+    font-weight: bold;
+}
+#accountHeader{
+    padding-top: 5.66rem;
+}
+#accountHeader .accountPersonalInfo{
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+}
+#accountHeader .accountPersonalInfo img{
+    padding-right: 1.33rem;
+}
+#accountHeader .personInfo{
+    display: flex;
+    flex-direction: column;
+    padding-right: 9.66rem;
+}
+#accountHeader .tokens{
+    display: flex;
+}
+#accountHeader .personInfo span{
+    padding-bottom: 0.5rem;
+}
+#accountHeader .personInfo .name{
+    color: rgb(85, 77, 86);
+    font-size: 1.41rem;
+    font-weight: 600;
+    font-family: 'Poppins';
+    line-height: 1.83rem;
+}
+
+#accountHeader .tokens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.66rem;
+}
+#accountHeader .tokens .tokenDiv{
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgb(247, 247, 247);
+    width: 27.5rem;
+    height: 4rem;
+    padding-left: 1.16rem;
+}
+#accountHeader .tokens img{
+    padding-right: 1.25rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+#accountHeader .otherInfo{
+    color: rgb(151, 145, 151);
+    font-family: 'Poppins';
+    font-size: 1.25rem;
+    line-height: 1.66rem;
+}
+#accountHeader .tokens .ticketNum{
+    color: rgb(85, 77, 86);
+    font-family: 'Poppins';
+    font-size: 1.25rem;
+    line-height: 1.66rem;
+    padding-right: 0.33rem;
+}
+
+
+#accountSummary{
+    display: flex;
+}
+#recentPurchase{
+    display: flex;
+    flex-direction: column;
+    padding-right: 0.2871rem;
+}
+#itemDescription{
+    color: rgb(151, 145, 151);
+    font-family: 'Poppins';
+    font-size: 1.25rem;
+    font-weight: 1.66rem;
+}
+
+
+/*** Order Status ***/
+#gpsImg{
+    width: 32.4rem;
+    height: 31.66rem;
+}
+
+.orderIndicator{
+    background-color: rgb(237, 236, 237);
+    width: 4.62rem;
+    height: 0.16rem;
+}
+#highlightedIndicator{
+    background-color: rgb(200, 207, 45);
+    width: 4.62rem;
+    height: 0.16rem;
+}
+
+#statusBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.91rem;
+    padding-bottom: 4.91rem;
+}
+#statusBar img{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+#orderStatus .OrderTitle{
+    color: rgb(85, 77, 86);
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 2.33rem;
+    line-height: 2.83rem;
+    padding-bottom: 2.66rem;
+}
+#orderStatus .orderItemList{
+    display: flex;
+    border-color: rgb(237, 236, 237);
+    border-style: solid;
+    border-width: 0.08rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 1.25rem;
+}
+#orderStatus .listPadding{
+    padding-top: 2.75rem;
+}
+#orderStatus .orderListDes{
+    display: flex;
+    flex-direction: column;
+}
+#orderStatus img{
+    padding-right: 1.16rem;
+}
+#orderStatus .greyText{
+    color: rgb(151, 145, 151);
+    font-family: 'Poppins';
+    font-size: 1.41rem;
+    line-height: 1.83rem;
+}
+#orderStatus .blackText{
+    color: rgb(85, 77, 86);
+    font-family: 'Poppins';
+    font-size: 1.41rem;
+    line-height: 1.83rem;
+}
+
+#gpsBtn{
+    padding-top: 1.33rem;
+    padding-bottom: 1.5rem;
+}
+/*for double btn on gps page*/
+#gpsBtn div{
+    padding-bottom: 1.33rem;
+}

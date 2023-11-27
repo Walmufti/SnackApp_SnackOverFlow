@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a snack bundle</title>
+    <link rel="stylesheet" href="style.css">
+    <!--poppins font-->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!--poppions semi-bold font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!--roboto-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+</head>
+<body id="bodyPadding">
+    
+    <section id="profileTop">
+        <!--slide indicators-->
+        <div class="slide-indicator">
+            <div class="slides"></div>
+            <div class="slides"></div>
+            <div class="slides"></div>
+            <div class="slides" id="higlitedSlide"></div>
+        </div>
+
+        <!--"What is your name?" Title-->
+        <div class="title">
+            <span>Build a snack bundle</span>
+        </div>
+    </section>
+
+    <!--holds imgs of selected snacks-->
+    <section id="infoBak">
+        <!--4 imgs of selected snacks and text-->
+        <div>
+            <!--imgs of snacks-->
+            <div id="cartListItems">
+                <div class="fourSquare">
+                    <div>
+                        <img src="img/snackBundle/fourSquare/topLeft.png" alt="topLeft.png">
+                        <img src="img/snackBundle/fourSquare/topRight.png" alt="topRight.png">
+                    </div>
+                    <div>
+                        <img src="img/snackBundle/fourSquare/bottomLeft.png" alt="bottomLeft.png">
+                        <img src="img/snackBundle/fourSquare/bottomRight.png" alt="bottomRight.png">
+                    </div>
+                </div>
+                <!--text-->
+                <div class="bundleFourDes">
+                    <span class="bundleTitle">Untitled bundle</span><br>
+                    <span class="description">No description</span>
+                </div>
+                <!--pencil icon-->
+                <div>
+                    <a href="editBundleInfo.html"><img src="img/snackBundle/editIcon/Icons.png" alt="edit.png"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--DIsplays all selected items from previous pg-->
+    <section id="itemList">
+        <div class="snackInfoList">
+            <div class="snackInfo">
+                <div>
+                    <!--img of selected snack-->
+                    <img id="pickedItemImg" src="img/snackBundle/fourSquare/topLeft.png" alt="dalgonaCoffe.png">
+                </div>
+                <div class="productDes">
+                    <div>
+                        <span class="bundleTitle">Dalgona coffe</span><br>
+                        <span class="description">Korean style</span>
+                    </div>
+                    <div class="ratingLine">
+                        <img src="img/snackBundle/star/Icons.png" alt="star.png">
+                        <span class="rating">5.0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="snackInfoList">
+            <div class="snackInfo">
+                <div>
+                    <!--img of selected snack-->
+                    <img id="pickedItemImg" src="img/snackBundle/fourSquare/topRight.png" alt="dalgonaCoffe.png">
+                </div>
+                <div class="productDes">
+                    <div>
+                        <span class="bundleTitle">Taiyaki ice cream</span><br>
+                        <span class="description">Classic Japanese ice cream</span>
+                    </div>
+                    <div class="ratingLine">
+                        <img src="img/snackBundle/star/Icons.png" alt="star.png">
+                        <span class="rating">4.8</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="snackInfoList">
+            <div class="snackInfo">
+                <div>
+                    <!--img of selected snack-->
+                    <img id="pickedItemImg" src="img/snackBundle/fourSquare/bottomLeft.png" alt="dalgonaCoffe.png">
+                </div>
+                <div class="productDes">
+                    <div>
+                        <span class="bundleTitle">Shaved ice with coffee</span><br>
+                        <span class="description">Cold iced coffe</span>
+                    </div>
+                    <div class="ratingLine">
+                        <img src="img/snackBundle/star/Icons.png" alt="star.png">
+                        <span class="rating">4.9</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="snackInfoList">
+            <div class="snackInfo">
+                <div>
+                    <!--img of selected snack-->
+                    <img id="pickedItemImg" src="img/snackBundle/fourSquare/bottomRight.png" alt="dalgonaCoffe.png">
+                </div>
+                <div class="productDes">
+                    <div>
+                        <span class="bundleTitle">Strawberry in chocolate</span><br>
+                        <span class="description">Fruit with chocolate</span>
+                    </div>
+                    <div class="ratingLine">
+                        <img src="img/snackBundle/star/Icons.png" alt="star.png">
+                        <span class="rating">4.9</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bottomSec">
+        <div class="bottomecDiv">
+            <!--top button-->
+            <div class="btn">
+                <a href="marketPage.html" class="noUnderline"><button id="btn" class="orangebtn">Save and Publish to Market</button></a>
+            </div>
+            <!--bottom button-->
+            <div class="btn">
+                <a href="#" class="noUnderline"><button id="btn" class="greybtn">Save to my collection only</button></a>
+            </div>
+            <div class="wording">
+                <span>If you publish to Market, you'll got 10 tokens. You can use</span>
+                <span>tokens for discount in the future.</span>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

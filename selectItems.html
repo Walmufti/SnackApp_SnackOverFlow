@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!--poppins font-->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!--poppions semi-bold font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!--roboto-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+</head>
+<body  id="bodyPadding">
+    
+    <section id="profileTop">
+        <!--slide indicators-->
+        <div class="slide-indicator">
+            <div class="slides"></div>
+            <div class="slides"></div>
+            <div class="slides" id="higlitedSlide"></div>
+            <div class="slides"></div>
+        </div>
+
+        <!--"What is your name?" Title-->
+        <div class="title">
+            <span>Select 4 items below</span>
+            <span>that suits your mood.</span>
+        </div>
+    </section>
+
+    <section id="selectOptions">
+        <div class="foodOptionContainer">
+
+            <div class="foodRow">
+                <div class="foodOption " id="item1" onclick="selectItem(this.id)">
+                    <div class="imgAndTitleOption">
+                        <img id="option" src="img/selectItems/dalgonaCoffe.png" alt="foodOption.png">
+                        <div class="checkedBackGround">
+                            <img id="itemChecked" src="img/selectItems/checkMark/Icons.png" alt="chekMark.png">
+                        </div>
+                    </div>
+                    <span>Dalgona</span>
+                    <span>coffee</span>
+                </div>
+
+                <div class="foodOption" id="item2" onclick="selectItem(this.id)">
+                    <div class="imgAndTitleOption">
+                        <img id="option" src="img/selectItems/authenticSamosa.png" alt="foodOption.png">
+                        <div class="checkedBackGround">
+                            <img id="itemChecked" src="img/selectItems/checkMark/Icons.png" alt="chekMark.png">
+                        </div>
+                    </div>
+                    <span>Authentic</span>
+                    <span>Samosa</span>
+                </div>
+            </div>
+
+            <div class="foodRow">
+                <div class="foodOption" id="item3" onclick="selectItem(this.id)">
+                    <div class="imgAndTitleOption">
+                        <img id="option" src="img/selectItems/simitForBreakfast.png" alt="foodOption.png">
+                        <div class="checkedBackGround">
+                            <img id="itemChecked" src="img/selectItems/checkMark/Icons.png" alt="chekMark.png">
+                        </div>
+                    </div>
+                    <span>Simit for</span>
+                    <span>breakfast</span>
+                </div>
+
+                <div class="foodOption" id="item4" onclick="selectItem(this.id)">
+                    <div class="imgAndTitleOption">
+                        <img id="option" src="img/selectItems/taiyakiIceCream.png" alt="foodOption.png">
+                        <div class="checkedBackGround">
+                            <img id="itemChecked" src="img/selectItems/checkMark/Icons.png" alt="chekMark.png">
+                        </div>
+                    </div>
+                    <span>Taiyaki ice</span>
+                    <span>cream</span>
+                </div>
+            </div>
+
+            <div class="foodRow">
+                <div class="foodOption" id="item5" onclick="selectItem(this.id)">
+                    <div class="imgAndTitleOption">
+                        <img id="option" src="img/selectItems/shavedIceWithCoffee.png" alt="foodOption.png">
+                        <div class="checkedBackGround">
+                            <img id="itemChecked" src="img/selectItems/checkMark/Icons.png" alt="chekMark.png">
+                        </div>
+                    </div>
+                    <span>Shaved ice</span>
+                    <span>with coffee</span>
+                </div>
+                <div class="foodOption" id="item6" onclick="selectItem(this.id)">
+                    <div class="imgAndTitleOption">
+                        <img id="option" src="img/selectItems/redBeanMochi.png" alt="foodOption.png">
+                        <div class="checkedBackGround">
+                            <img id="itemChecked" src="img/selectItems/checkMark/Icons.png" alt="chekMark.png">
+                        </div>
+                    </div>
+                    <span>Red bean</span>
+                    <span>mochi</span>
+                </div>
+            </div>
+
+            <div class="foodRow">
+                <div class="foodOption" id="item7" onclick="selectItem(this.id)">
+                    <div class="imgAndTitleOption">
+                        <img id="option" src="img/selectItems/originalOreoCoockeis.png" alt="foodOption.png">
+                        <div class="checkedBackGround">
+                            <img id="itemChecked" src="img/selectItems/checkMark/Icons.png" alt="chekMark.png">
+                        </div>
+                    </div>
+                    <span>Original Oreo</span>
+                    <span>coockies</span>
+                </div>
+                <div class="foodOption" id="item8" onclick="selectItem(this.id)">
+                    <div class="imgAndTitleOption">
+                        <img id="option" src="img/selectItems/strawberryInChocolate.png" alt="foodOption.png">
+                        <div class="checkedBackGround">
+                            <img id="itemChecked" src="img/selectItems/checkMark/Icons.png" alt="chekMark.png">
+                        </div>
+                    </div>
+                    <span>Strawberry in</span>
+                    <span>chocolate</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="twoBtn">
+        <div class="buildBtnBundle">
+            <!--top button-->
+            <div class="btn">
+                <a href="snackBundle.html" class="noUnderline"><button id="btn" class="orangebtn">Build a snack bundle box</button></a>
+            </div>
+            <!--bottom button-->
+            <div class="btn">
+                <a href="yourGoal.html" class="noUnderline"><button id="btn" class="greybtn">Back</button></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="selectItems.js"></script>
+
+</body>
+</html>
